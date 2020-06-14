@@ -32,7 +32,7 @@ Para prosseguir você pode digitar **y** ou **Y**.
 
 *Dica: neste caso, como Y está em maísculo no [Y/n] você pode simplesmente apertar **Enter**.*
 
-(OBS: Essa situação vai se repetir constantemente quando você ligar com o terminal, então essa dica é bem útil.)
+(OBS: Essa situação vai se repetir constantemente quando você usar o terminal, então essa dica é bem útil.)
 
 Ao término da instalação vamos verificar a versão do zsh que instalamos.
 
