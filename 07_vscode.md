@@ -1,8 +1,6 @@
 # Visual Studio Code
 
-Visual Studio Code (VSCode) é um editor de texto muito poderoso, principalmente por conta das inúmeras extensões criadas pela comunidade de usuários. 
-
-
+Visual Studio Code (VSCode) é um editor de texto muito poderoso, principalmente por conta das inúmeras extensões criadas pela comunidade de usuários.
 
 ## Faça o download do VSCode
 
@@ -12,13 +10,9 @@ Siga o guia de instalação padrão do aplicativo. No fim ele vai dar a opção 
 
 <img src=".\imgs\vscode\tela_inicial_vscode.png" style="zoom: 67%;" />
 
-
-
 Se você chegou até aqui você instalou o vscode com sucesso.
 
-As extensões do vscode o tornam muito poderoso, iremos utilizar muitas delas para nos ajudar de diversas formas (desde colorir os parênteses e chaves até corrigir nosso código automaticamente!) 
-
-
+As extensões do vscode o tornam muito poderoso, iremos utilizar muitas delas para nos ajudar de diversas formas (desde colorir os parênteses e chaves até corrigir nosso código automaticamente!)
 
 ## Extensões
 
@@ -56,7 +50,7 @@ Ok, veremos então:
 
 <img src=".\imgs\vscode\vs_07.png" style="zoom:67%;" />
 
-Ah, bem melhor! Estamos dentro da nossa pasta **teste**!! 
+Ah, bem melhor! Estamos dentro da nossa pasta **teste**!!
 
 Veja no canto inferior esquerdo temos WSL: Ubuntu 18-04 e logo depois **master** escrito, isso indica em que branch o nosso repositório do git está!
 
@@ -64,11 +58,11 @@ Se você clicar em **master** você verá:
 
 <img src=".\imgs\vscode\vs_08.png" style="zoom:67%;" />
 
-viu, podemos criar uma branch nova por aqui. Vamos criar uma branch nova! Eu criei uma branch **adiciona_texto**. 
+viu, podemos criar uma branch nova por aqui. Vamos criar uma branch nova! Eu criei uma branch **adiciona_texto**.
 
 <img src=".\imgs\vscode\vs_09.png" style="zoom:67%;" />
 
-Viu? Já estamos na branch nova. Semelhante a fazer ``$ git checkout -b adiciona_texto``.
+Viu? Já estamos na branch nova. Semelhante a fazer `$ git checkout -b adiciona_texto`.
 
 Posso clicar com botão direito e criar um novo arquivo:
 
@@ -82,33 +76,29 @@ Foi um código em python chamado **texto.py**! Veja que temos um menu do lado qu
 
 <img src=".\imgs\vscode\vs_12.png" style="zoom:67%;" />
 
-Incrível né? É exatamente o Git sendo mostrado pelo vscode! 
+Incrível né? É exatamente o Git sendo mostrado pelo vscode!
 
-Você pode fazer o comando ``$ git add`` ao clicar em:
+Você pode fazer o comando `$ git add` ao clicar em:
 
 <img src=".\imgs\vscode\vs_13.png" style="zoom:67%;" />
 
-E ``$ git commit -m "Adiciona texto.py"  ao digitar a mensagem:
+E ``\$ git commit -m "Adiciona texto.py" ao digitar a mensagem:
 
 <img src=".\imgs\vscode\vs_14.png" style="zoom:67%;" />
 
-Por mim o commit é terminado apertando Ctrl + Enter! Pronto, você fez um commit usando o vscode! Não acredita? 
+Por mim o commit é terminado apertando Ctrl + Enter! Pronto, você fez um commit usando o vscode! Não acredita?
 
-Se você voltar no terminal verá que o zsh já está te dizendo que você está na branch nova **adiciona_texto**, se você der um ``ls``ele vai te mostrar o **texto.py** nos arquivos. Um ``$ git log`` vai te mostrar exatamente seu último commit feito no vscode:
+Se você voltar no terminal verá que o zsh já está te dizendo que você está na branch nova **adiciona_texto**, se você der um `ls`ele vai te mostrar o **texto.py** nos arquivos. Um `$ git log` vai te mostrar exatamente seu último commit feito no vscode:
 
 <img src=".\imgs\vscode\vs_15.png" style="zoom:67%;" />
 
 Então funcionou mesmo, certo?
 
-No meu do "source control" você tem acesso a outros commits que a gente viu anteriormente, como ``git push``e ``git pull``. Dá para fazer tudo pelo vscode!
+No meu do "source control" você tem acesso a outros commits que a gente viu anteriormente, como `git push`e `git pull`. Dá para fazer tudo pelo vscode!
 
 <img src=".\imgs\vscode\vs_16.png" style="zoom:67%;" />
 
-
-
 Dica: existe um extensão do GitHub pro vscode que permite que você abra um PR pelo próprio vscode. Dê uma pesquisada.
-
-
 
 ## Executando um programa em Python pelo VScode
 
@@ -132,17 +122,17 @@ Agora com F5 nós temos a seguinte opção!
 
 <img src=".\imgs\vscode\vs_20.png" style="zoom:67%;" />
 
-Veja o que foi aberto, um terminal! Exatamente com o nosso zsh bonitinho e tudo mais! 
+Veja o que foi aberto, um terminal! Exatamente com o nosso zsh bonitinho e tudo mais!
 
 O nosso código realmente funcionou, quem diria! "Texto novo!" foi impresso na tela.
 
---------------
+---
 
 Agora, se eu quisesse ter aberto um terminal antes, como eu faria?
 
 Tem um menu lá no topo chamado Terminal > New Terminal. Simples assim.
 
--------------------
+---
 
 Okay, agora eu fiz um código um pouco mais complexo, veja:
 
@@ -154,13 +144,13 @@ Ta, mas eu tô com uma dúvida no funcionamento desse programa... que debugá-lo
 
 <img src=".\imgs\vscode\vs_22.png" style="zoom:67%;" />
 
-Quando você apertar F5 + Enter novamente: 
+Quando você apertar F5 + Enter novamente:
 
 <img src=".\imgs\vscode\vs_23.png" style="zoom:67%;" />
 
 O código parou exatamente onde colocarmos o breakpoint. Veja no lado esquerdo o valor de **a**, a variável **b** ainda não tem valor, se você apertar Step Over (F10) (ou a setinha caindo do lado do play) você verá que **b** assume o valor 5, se clicar novamente chega o momento do print e o código acaba. Esse é o funcionamento básico do debugger!!
 
--------------------
+---
 
 Nesse momento, se você for no controle de versão, você verá o seguinte:
 
@@ -176,7 +166,7 @@ Abra o .gitignore e adicionar .vscode no topo do arquivo:
 
 <img src=".\imgs\vscode\vs_26.png" style="zoom:67%;" />
 
-Da onde vem esse .gitignore?? Lembre-se que quando criamos o repositório teste no GitHub, nós escolhemos para iniciá-lo com um gitignore de python. Pois bem, o GitHub já cria o gitignore com os arquivos mais comuns a serem ignorados em um projeto de python! 
+Da onde vem esse .gitignore?? Lembre-se que quando criamos o repositório teste no GitHub, nós escolhemos para iniciá-lo com um gitignore de python. Pois bem, o GitHub já cria o gitignore com os arquivos mais comuns a serem ignorados em um projeto de python!
 
 Pronto, o que temos agora no controle de versão:
 
@@ -190,11 +180,10 @@ Agora veja se você consegue adicionar os arquivos, fazer um commit e dar um pus
 
 Sucesso!
 
-----------
+---
 
 Extra: você pode procurar por essential na extensões e instalar extensões que algum usuário juntou, como em:
 
 <img src=".\imgs\vscode\vs_29.png" style="zoom:67%;" />
 
 Se você não gostar de alguma é só desativar!
-

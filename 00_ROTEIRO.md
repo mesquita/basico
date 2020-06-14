@@ -1,7 +1,5 @@
 # Roteiro
 
-
-
 - Instalando WSL
 
 - Oh My Zsh (Ou como melhorar sua vida mil vezes ao usar o terminal)
@@ -15,5 +13,3 @@
 - Git & GitHub
 
 - VSCode
-
-  
