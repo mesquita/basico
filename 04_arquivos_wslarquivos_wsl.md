@@ -4,7 +4,7 @@ Como eu faço para ver meus arquivos do Windows quando estou no terminal do Ubun
 
 Eles ficam em **/mnt/c**. Se você fizer: ``$ cd /mnt/c``, você verá algo como:
 
-![](.\imgs\wsl\wsl.png)
+<img src=".\imgs\wsl\wsl.png" style="zoom:67%;" />
 
 A partir daí você pode caminhar (usando ``cd``) pelas pastas do Windows e manipular os arquivos como você quiser.
 
