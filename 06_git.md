@@ -12,17 +12,17 @@ Existem muitas formas de iniciar um repositório local e remotamente (no GitHub)
 
 Vá até o site do GitHub, faça o login (ou crie sua conta e faça o login). No canto superior direito você pode clicar no **+** e verá:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git.png)
+![](.\imgs\git\git.png)
 
 
 
 Depois disso você verá:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_02.png)
+![](.\imgs\git\git_02.png)
 
 O nome do meu repositório é **teste**. Ao lado aparece o meu username, mesquita. Eu coloquei uma descrição, coloquei o repositório como Privado (só eu e quem eu liberar poderá ver este repositório e o que tem dentro dele). Escolhi inicializar com um README, escolhi um .gitignore do Python e a licença MIT License. Veremos cada coisa em detalhe mais pra frente.
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_03.png)
+![](.\imgs\git\git_03.png)
 
 Parabéns, você criou o seu repositório!
 
@@ -32,7 +32,7 @@ Ok. Mas, este repositório está apenas no GitHub, como fazer para "baixarmos" e
 
 Podemos fazer isso da seguinte maneira, podemos clicar no botão verde **Clone or download** e copiarmos o link:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_04.png)
+![](.\imgs\git\git_04.png)
 
 Use o comando 
 
@@ -40,13 +40,13 @@ Use o comando
 
 no terminal do Ubuntu e você terá algo como:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_06.png)
+![](.\imgs\git\git_06.png)
 
 Perceba que a pasta **teste** foi criada.
 
 Ao entrar na pasta **teste** você verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_07.png)
+![](.\imgs\git\git_07.png)
 
 Perceba que agora aparece **on git:master**. Isso quer nos dizer que estamos numa pasta onde o git está ativado e estamos na branch chamada **master** (vamos ver o que é um branch mais pra frente). Também já temos os arquivos LICENSE e README.md que estavam aparecendo no GitHub. Mas, cadê o arquivo gitignore? Veja que ele tem um ponto no começo do nome, então ele está oculto.
 
@@ -54,7 +54,7 @@ Perceba que agora aparece **on git:master**. Isso quer nos dizer que estamos num
 
 Vamos fazer uma abordagem bem prática aqui. Quais comandos mais usamos no dia a dia. Vamos fazer o seguinte: criaremos um arquivo de texto e controlaremos suas modificações com o Git. 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_08.png)
+![](.\imgs\git\git_08.png)
 
 Pronto, criei um arquivo chamado **arquivo.txt** e ele já está na minha pasta /teste.
 
@@ -70,7 +70,7 @@ ou
 
 Você verá o seguinte após executar o comando: 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_09.png)
+![](.\imgs\git\git_09.png)
 
 Pois bem, isso nos informa que o nosso **arquivo.txt** não está sendo "trackeado" pelo Git, ou seja, o Git não está obsevando as modificações que estão acontecendo neste arquivo.
 
@@ -78,7 +78,7 @@ Vamos então adicionar este arquivo ao git:
 
 ``$ git add arquivo.tx``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_10.png)
+![](.\imgs\git\git_10.png)
 
 (Veja que eu usei os atalhos do zsh, você também pode usar!)
 
@@ -90,7 +90,7 @@ Vamos ver então como funciona. Entramos com o comando:
 
 Ao entrar com este comando, todos os arquivos que estão verdinhos depois de "Changes to be committed" vão entrar no mesmo commit. o **-m** nos dá opção de inserir uma mensagem curta sobre este commit, neste caso "Adiciona arquivo.txt".
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_11.png)
+![](.\imgs\git\git_11.png)
 
 Algumas observações:
 
@@ -101,7 +101,7 @@ Algumas observações:
 
 Após preencher os dados e fazer o commit novamente, deu certo e apareceu algo do tipo:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_12.png)
+![](.\imgs\git\git_12.png)
 
 Veja que ao dar ``git status``novamente ele diz que eu estou 1 commit a frente de "origin/master". O que isso significa?
 
@@ -113,7 +113,7 @@ Origin é o nome dado ao servidor remoto (neste caso o GitHub), se executarmos o
 
 Nós veremos:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_13.png)
+![](.\imgs\git\git_13.png)
 
 Então toda vez que falarmos de "origin", você tem que saber que estamos nos referindo ao local remoto, no nosso caso o GitHub! Perceba que podemos ter vários servidores remotos, um mesmo repositório local pode estar conectado ao GitHub e ao GitLab ao mesmo tempo. Neste caso teríamos, por exemplo, um **origin-lab https://gitlab.com/mesquita/teste.git ** ou algo semelhante!
 
@@ -121,13 +121,13 @@ Então toda vez que falarmos de "origin", você tem que saber que estamos nos re
 
 Bem, mas vamos continuar. Nós criamos um arquivo e agora o git está de olho nele. Vamos alterá-lo! 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_14.png)
+![](.\imgs\git\git_14.png)
 
 Veja, eu alterei o arquivo colocando "teste" como conteúdo dele.
 
 Ao darmos ``git status``novamente veremos o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_15.png)
+![](.\imgs\git\git_15.png)
 
 O Git realmente está de olho nele, viu que nosso arquivo foi modificado. Para commitar a mudança que fizemos precisamos adicioná-lo com o ``git add``e depois registramos o commit com ``git commit``.
 
@@ -135,7 +135,7 @@ Mas... o que foi mudado?
 
 Se fizermos ``$ git diff arquivo.txt``podemos ver:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_16.png)
+![](.\imgs\git\git_16.png)
 
 (Aperte **q** para sair do diff)
 
@@ -143,7 +143,7 @@ Bem, a mudança foi muito simples, a linha com "Conteúdo do arquivo" foi deleta
 
 Ok, mudança exatamente isso. Então vamos commitar.
 
-![]()![git_17](C:\Users\mesquita\Documents\Basico\imgs\git\git_17.png)
+![]()![git_17](.\imgs\git\git_17.png)
 
 Veja que agora estamos 2 commits na frente de origin/master.
 
@@ -151,7 +151,7 @@ Agora uma pergunta, depois dessas duas mudanças, como eu faço para ver meu his
 
 ``$ git log``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_18.png)
+![](.\imgs\git\git_18.png)
 
 Veja que as mudanças mais velhas ficam na parte de baixo e as mais novas na parte de cima. Este "Initial commit" foi criado na hora que criamos o repositório no GitHub! 
 
@@ -165,13 +165,13 @@ Neste comando ``git push``você está enviando as informações da branch **mast
 
 Se der certo, no GitHub você verá: 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_19.png)
+![](.\imgs\git\git_19.png)
 
 Veja quem está lá agora, o **arquivo.txt**! 
 
 Agora que nossa branch **master** local está atualizada com a remota, você pode inclusive ver o histórico de alterações no próprio GitHub.
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_20.png)
+![](.\imgs\git\git_20.png)
 
 Ao clicar em commits você verá exatamente os mesmos commits que vimos anteriormente com ``git log``. Você também pode entrar em cada commit e ver o que exatamente foi mudado. Claro que você também consegue ver o que foi mudado de commit pra commit pelo terminal, localmente. Fica então esse exercício ao leitor (Google & StackOverflow!).
 
@@ -179,7 +179,7 @@ Ao clicar em commits você verá exatamente os mesmos commits que vimos anterior
 
 Próxima situação: não quero mais o **arquivo.txt**, não preciso mais dele, vou deletar. 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_21.png)
+![](.\imgs\git\git_21.png)
 
 Ao deletar com 
 
@@ -191,7 +191,7 @@ o git nos informa que ele foi deletado. Para informar ao git que ele deve parar 
 
 E então commitamos a mudança. 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_22.png)
+![](.\imgs\git\git_22.png)
 
 Pronto. Podemos atualizar o GitHub:
 
@@ -213,7 +213,7 @@ Próxima situação bem comum: um arquivo foi alterado no GitHub (por você ou p
 
 A alteração que eu vou fazer neste caso será mudar o README.md pelo próprio GitHub (dê uma olhada para descobrir como alterar um arquivo pelo próprio GitHub, não é difícil!)
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_23.png)
+![](.\imgs\git\git_23.png)
 
 Pronto, alterei. Veja que agora temos 5 commits e veja que o README mudou.
 
@@ -223,7 +223,7 @@ Para atualizar vamos fazer o seguinte:
 
 ``$ git pull origin master``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_24.png)
+![](.\imgs\git\git_24.png)
 
 Pronto, fizemos o **pull** e atualizamos localmente.
 
@@ -253,13 +253,13 @@ Perceba que o zsh nos informa que a branch que estamos é a implementa_funcao qu
 
 Agora vamos criar um arquivo, adicioná-lo ao git e fazer um commit:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_25.png)
+![](.\imgs\git\git_25.png)
 
 Veja com ``ls`` que temos o arquivo **teste.txt** criado. 
 
 Agora perceba o seguinte: ao mudarmos para a master novamente com ``$ git checkout master``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_26.png)
+![](.\imgs\git\git_26.png)
 
 Não temos o arquivo **teste.txt** na master! As alterações que fizemos na branch implementa_funcao ficam apenas nessa branch, até que façamos o merge com a master (vamos ver isso depois!).
 
@@ -275,11 +275,11 @@ Bem, se estamos trabalhando num time, temos que abrir um Pull Request para fazer
 
 Veja o GitHub:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_27.png)
+![](.\imgs\git\git_27.png)
 
 Agora ele nos diz uma branch nova foi criada e nos dá a opção de "Compare & pull request", vamos fazer isso:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_28.png)
+![](.\imgs\git\git_28.png)
 
 No começo da página devemos colocar um título para o PR, assim como uma descrição e outras informações adicionais (quem vai revisar o PR em (Reviewers), etc). Ao rolar a página você consegue ver quais arquivos estão sendo adicionados/modificados e o que está sendo adicionado/modificado.
 
@@ -287,7 +287,7 @@ OBS: Perceba que estamos fazendo o PR para a branch **master** neste caso, algun
 
 Ao criar o PR você verá:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_30.png) 
+![](.\imgs\git\git_30.png) 
 
 E então os membros do seu time farão comentários e pedirão alterações para que você faça no seu código. Você pode alterar localmente e enviar as alterações com um ``git push`` , o que você enviar de alteração com o comando aparecerá no PR. 
 
@@ -313,11 +313,11 @@ Tudo bem, eu deletei a branch localmente, mas você lembra que a gente enviou el
 
 Pelo próprio GitHub você pode ir em:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_31.png)
+![](.\imgs\git\git_31.png)
 
 e apertar:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\git\git_32.png)
+![](.\imgs\git\git_32.png)
 
 Tá bom, não deu certo por aí né? Ele disse que tem um PR aberto usando essa branch! Justo, a gente realmente abriu um PR usando essa branch!! Primeiro vá em Pull Requests, role até o final da página e aperte "Close pull request". Agora você pode voltar em branches e deletar a implementa_funcao.
 
@@ -329,7 +329,7 @@ Localmente podemos fazer o seguinte:
 
 Pronto! 
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\git\git_33.png" style="zoom:67%;" />
+<img src=".\imgs\git\git_33.png" style="zoom:67%;" />
 
 Das duas formas você verá apenas a master como branch. Tanto remotamente como na imagem anterior ou locamente com ``$ git branch``.
 

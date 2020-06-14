@@ -14,7 +14,7 @@ Com a parte do tutorial anterior você já é capaz de copiar o instalador que f
 
 Caso você tenha conseguido copiar o instalador para sua home, você verá algo do tipo:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda.png)
+![](.\imgs\conda\conda.png)
 
 Caso não tenha conseguido, dê uma olhada no tutorial anterior sobre arquivos no WSL.
 
@@ -24,13 +24,13 @@ A próxima etapa é instalar o miniconda com:
 
 Continue apertando Enter, digite "yes" e aperte Enter para instalar no caminho padrão:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_02.png)
+![](.\imgs\conda\conda_02.png)
 
 Digite "yes" para ele inicializar o conda no zsh. Feche o terminal e abra novamente.
 
 A primeira coisa diferente a se perceber é o **(base)**:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_03.png)
+![](.\imgs\conda\conda_03.png)
 
 Agora com o conda instalado e ativado, o **base** é o environment em que estamos. Os environments nos permitem que criamos ambientes separados para diferentes projetos. Nesses ambientes separados nós podemos instalar pacotes e suas depedências sem criar conflitos com outros ambientes. Você está criando um ambiente de desenvolvimento (neste caso de Python) que você poderá, por exemplo, instalar uma versão do Numpy (pacote de computação númerica) em um ambiente e outra versão em outro ambiente, sem que tenhamos nenhum conflito. 
 
@@ -42,7 +42,7 @@ O ambiente padrão é o **base**, que já é criado quando você instala o conda
 
 ``$ conda create --name tutorial``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_04.png)
+![](.\imgs\conda\conda_04.png)
 
 Podemos ver que para ativar o nosso ambiente **tutorial** nós temos que fazer:
 
@@ -52,7 +52,7 @@ e você vai perceber que o **base** mudou para **tutorial**. Podemos ver todos (
 
 ``$ conda info --envs``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_05.png)
+![](.\imgs\conda\conda_05.png)
 
 Veja que temos um ***** no tutorial, indicando que estamos nele (além de termos **(tutorial)** escrito sobre **# vinicius...**, claro)
 
@@ -70,13 +70,13 @@ Ao terminar a instalação, nós podemos ver quais pacotes agora fazem parte do 
 
 irá listar todos os pactoes e suas versões. Veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_06.png)
+![](.\imgs\conda\conda_06.png)
 
 Veja que a versão do Numpy instalado foi a 1.18.1, e que a versão do Python é 3.8.3.
 
 Podemos voltar para o ambiente **base** e ver quais pacotes estão instalados.
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_07.png)
+![](.\imgs\conda\conda_07.png)
 
 Veja que não temos numpy e a versão do pyhon é 3.7.6. Ou seja, ao instalarmos a versão mais nova do Numpy, o Python também foi atualizado. Isso o usuário mais atento percebeu que aconteceria antes de aceitar a instalação do Numpy.
 
@@ -102,7 +102,7 @@ Múltiplos pacotes com versões específicas ao mesmo tempo:
 
 Se tivermos um arquivo requirements.txt que foi criado diretamente de um ambiente do conda, ele vai ter mais ou menos essa cara:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\conda\conda_08.png)
+![](.\imgs\conda\conda_08.png)
 
 O próprio começo do arquivo já nos diz como criar o ambiente. Vamos fazer:
 

@@ -10,7 +10,7 @@ Agora vamos aprender um pouco sobre o terminal ou:
 
 Sim, o terminal pode ter vários nomes, por exemplo o zsh que acabamos de instalar é se chama Z Shell. Tenha em mente que estamos falando quase sempre da exata mesma coisa. Disso:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal.png)
+![](.\imgs\terminal\terminal.png)
 
 
 
@@ -22,7 +22,7 @@ O primeiro comando é muito importante para termos a noção de localização de
 
 Ao digitar este comando você verá algo semelhante a:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_02.png" style="zoom: 67%;" />
+<img src=".\imgs\terminal\terminal_02.png" style="zoom: 67%;" />
 
 O que isso significa? O comando `pwd` significa "**p**rint **w**orking **d**irectory", em uma tradução (bem) livre seria algo como "mostre na tela a pasta em que estou atualmente". Geralmente no linux o termo diretório é usado no lugar de pasta, e o "working" dá a ideia do diretório atual em que estamos.
 
@@ -34,7 +34,7 @@ Outro comando importante para nos localizarmos é o:
 
 O`ls` significa **l**i**s**t, ou listar. No meu caso, quando eu digito listar o que eu encontro é o seguinte:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_03.png" style="zoom:67%;" />
+<img src=".\imgs\terminal\terminal_03.png" style="zoom:67%;" />
 
 Nada foi impresso na tela, o que aconteceu? 
 
@@ -44,7 +44,7 @@ Talvez eu tenha um diretório ou arquivo oculto na pasta, como eu faço para ver
 
 O comando `ls`, assim como a maioria dos comandos do terminal, tem uma help que mostra como usar o comando. Se você digite `$ ls --help` verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_04.png)
+![](.\imgs\terminal\terminal_04.png)
 
 O que queremos é justamente ver os arquivos que começam com **.** (ponto), que é a primeira opção. Então temos que usar ``$ ls -a`` ou ``$ ls --all``para vermos estes arquivos. Neste caso **-a** ou **--all** são chamados de ***flags***. Eles "acenam" para o ``ls`` que você usuário está querendo uma opção a mais do que um simples ``ls`` sozinho.
 
@@ -52,7 +52,7 @@ O que queremos é justamente ver os arquivos que começam com **.** (ponto), que
 
 Agora você pode estar se perguntando, qual a diferença entre ``$ ls -a`` e ``$ ls --all``? Nenhuma, eles vão mostrar o mesmo resultado. Veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_05.png)
+![](.\imgs\terminal\terminal_05.png)
 
 
 
@@ -84,7 +84,7 @@ Ok, criamos um diretório, mas como entrar nele? Para isso vamos usar o comando 
 
 e então apertar Enter. Ou então podemos dizer apenas `$ cd` e apertar **Tab** que o nosso amigo zsh irá completar com **tmp**. Veja, ele completa diretamente com **tmp** porque é o único diretório nesta pasta atual, caso tivessemos mais diretórios dentro deste atual o zsh nos daria uma lista de opção para caminharmos por ela (veremos isso em outros exemplos).
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_06.png)
+![](.\imgs\terminal\terminal_06.png)
 
 Usando um pouco do que a gente viu anteriormente, vemos que o nosso tema do zsh nos mostra em que pasta estamos agora. Vemos também que ao dar ``ls``ele mostra que o diretório não tem nada dentro (acabamos de criá-lo!). Vemos com ``pwd`` que estamos em /home/vinicius/tmp. Ótimo.
 
@@ -100,13 +100,13 @@ No caso da função ``mkdir`` ela aceita diversos argumentos ao mesmo tmepo, ou 
 
 Se você der um ``ls`` verá:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_07.png)
+![](.\imgs\terminal\terminal_07.png)
 
 Perceba que dir1, dir2 e dir3 foram criados no mesmo nível. Caso o que você queira criar sub diretórios um dentro do outro, podemos fazer o seguinte, com a flag **-p**:
 
 ``$ mkdir -p dir4/dir5/dir6``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_08.png)
+![](.\imgs\terminal\terminal_08.png)
 
 
 
@@ -114,7 +114,7 @@ Vá ao help de ``mkdir``e veja o que **-p** significa.
 
 Perceba que no nível de **tmp** só foi criado o **dir4**. Então eu posso caminhar pelos diretórios como na imagem seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_09.png)
+![](.\imgs\terminal\terminal_09.png)
 
 Perceba que o zsh me diz no final que estou em **dir6**.
 
@@ -144,7 +144,7 @@ Nada foi impresso na tela, se eu usar o comando ``ls`` eu vejo que o **teste_1.t
 
 ``$ cat teste_1.txt``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_10.png)
+![](.\imgs\terminal\terminal_10.png)
 
 Funcionou né? Criamos o **teste_1.txt** e conseguimos visualizá-lo.
 
@@ -162,11 +162,11 @@ Caso eu queira mudar o meu arquivo **teste_1.txt** de lugar, como eu faço? Diga
 
 Veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_11.png)
+![](.\imgs\terminal\terminal_11.png)
 
 Perceba que eu tive que mudar meu diretório com ``cd``e depois fazer um ``ls``para ver se **teste_1.txt** realmente estava lá. Então eu tenho que voltar com ``cd ..``para o nível superior. Não tem uma maneira mais direta de fazer isso? Tem! Eu poderia simplesmente ter feito``$ ls dir4``. Veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_12.png)
+![](.\imgs\terminal\terminal_12.png)
 
 Eu consegui ver que o meu arquivo estava em **dir4** com muito menos trabalho. Excelente.
 
@@ -174,7 +174,7 @@ Eu consegui ver que o meu arquivo estava em **dir4** com muito menos trabalho. E
 
 Agora eu quero copiar o meu **teste_1.txt** , como eu faço? Podemos usar o comando ``cp``. Veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_13.png)
+![](.\imgs\terminal\terminal_13.png)
 
 Perceba que eu escrevi
 
@@ -184,7 +184,7 @@ foi um erro, eu queria ter escrito **meu_arquivo.txt**! Como eu faço então par
 
 ``$ mv mu_arquivo.txt meu_arquivo.txt``
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_14.png)
+![](.\imgs\terminal\terminal_14.png)
 
 Veja bem, não temos mais o arquivo antigo escrito de forma errada, apenas o arquivo final. Sucesso!
 
@@ -194,7 +194,7 @@ Apagar um arquivo ou diretório é algo muito comum. O comando para isso no linu
 
 Um pouco de contexto, eu estou em **dir4** e vou criar um arquivo chamado **outro.txt** para ilustrar esta parte. Ficaremos assim então:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_15.png)
+![](.\imgs\terminal\terminal_15.png)
 
 Então primeiramente eu vou removar o **outro.txt** que eu acabei de criar, para isso podemos fazer:
 
@@ -232,7 +232,7 @@ O que significa o asterísco?? Significa que todos os arquivos ou diretórios qu
 
 Vamos ver isso em ação mais uma vez.
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_16.png)
+![](.\imgs\terminal\terminal_16.png)
 
 Veja que eu criei dois diretórios **tabelas_excel** e **tabelas_csv** assim como um arquivos **tabela_exemplo.xls**. Ao mandar apagar ``$ rm -r tabe*`` tudo foi apagado! Perceba que este comando é bem "poderoso", então use com sabedoria e veja o que você está fazendo.
 
@@ -254,15 +254,15 @@ O sistema vai pedir sua senha de usuário e você então poderá instalar o arqu
 
 Sucesso? Vamos ver se funcionou:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_17.png)
+![](.\imgs\terminal\terminal_17.png)
 
 Funcionou se o programa rodou sem erro, ótimo. Mas... sem graça né? Vamos criar umas pastas e ver como fica o ouput do tree. Vejamos:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_18.png)
+![](.\imgs\terminal\terminal_18.png)
 
 Ah, bem melhor. Bacana. Ele mostra a *árvore* de pastas e arquivos. Veja mais um exemplo depois de eu ter criado mais arquivos:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_19.png)
+![](.\imgs\terminal\terminal_19.png)
 
 
 
@@ -270,6 +270,6 @@ Por fim, vamos apagar tudo!
 
 ``cd ..`` voltamos para /home/vinicius e ``rm -r tmp`` deletar tudo recursivamente. 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\terminal\terminal_20.png)
+![](.\imgs\terminal\terminal_20.png)
 
 Fim!

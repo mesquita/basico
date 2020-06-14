@@ -24,7 +24,7 @@ sudo apt-get install zsh
 
 Ao apertar Enter você verá o seguinte:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh.png" style="zoom:67%;" />
+<img src=".\imgs\zsh\zsh.png" style="zoom:67%;" />
 
 Entenda o que o terminal nos informou até agora: você pediu para instalar o zsh, e ele informou que 2 novos pacotes serão instalados (zsh e zsh-common), e isso vai ocupar 15.2 MB do espaço da minha memória de disco. Ok, entendi. Quero prosseguir.
 
@@ -42,7 +42,7 @@ Digite no terminal: `$ zsh --version`
 
 Se tudo occoreu como previsto na instalação, você verá o seguinte:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_02.png" style="zoom:60%;" />
+<img src=".\imgs\zsh\zsh_02.png" style="zoom:60%;" />
 
 Temos **zsh 5.4.2** como resultado. Ótimo. Instalamos o zsh.
 
@@ -52,7 +52,7 @@ Após o comando, o sistema deve pedir sua senha. Insira a senha e aperte Enter. 
 
 Ao abrir novamente veremos o seguinte:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_03.png" style="zoom:60%;" />
+<img src=".\imgs\zsh\zsh_03.png" style="zoom:60%;" />
 
 Digite 2 para usar as configurações recomendadas.
 
@@ -66,7 +66,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 
 E então a instalação irá ocorrer:
 
-#### <img src="C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_04.png" style="zoom:60%;" />
+#### <img src=".\imgs\zsh\zsh_04.png" style="zoom:60%;" />
 
 Ao termino da instalação você verá que fica apenas um **~** no começo da linha que você digita seus comandos. Vamos mudar isso.
 
@@ -90,7 +90,7 @@ Este comando irá nos listar o que temos no repositório, incluindo arquivos ocu
 
 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_05.png)
+![](.\imgs\zsh\zsh_05.png)
 
 
 
@@ -102,7 +102,7 @@ Nós queremos modificar arquivo .zshrc, vemos que ele está no repositório em q
 
 Ao abrir o arquivo veremos o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_06.png)
+![](.\imgs\zsh\zsh_06.png)
 
 A linha que queremos alterar é a **ZSH_THEME="robbyrussell"**. Como estamos no VIM (editor de texto que funciona diretamente no terminal), podemos ir até a linha usando as setas e depois temos que digitar a letra **i** para entrar em modo de editação. Irá aparecer -- INSERT -- no canto inferior da tela. 
 
@@ -116,7 +116,7 @@ Ok, mudamos o tema, mas... nada mudou? Para realmente "ativar" o tema, precisamo
 
 `$ source .zshrc` 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\zsh\zsh_07.png)
+![](.\imgs\zsh\zsh_07.png)
 
 
 

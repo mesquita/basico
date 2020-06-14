@@ -10,7 +10,7 @@ https://code.visualstudio.com/docs/?dv=win
 
 Siga o guia de instalação padrão do aplicativo. No fim ele vai dar a opção de iniciar o vscode, então você deverá ver a seguinte tela:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\vscode\tela_inicial_vscode.png" style="zoom:60%;" />
+<img src=".\imgs\vscode\tela_inicial_vscode.png" style="zoom:60%;" />
 
 
 
@@ -24,11 +24,11 @@ As extensões do vscode o tornam muito poderoso, iremos utilizar muitas delas pa
 
 As extensões ficam aqui:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_02.png)
+![](.\imgs\vscode\vs_02.png)
 
 Veja que eu já tenho uma instalada, a Remote - WSL. Você deve instalar essa também é, por exemplo, a de Python. Procure por ela e a instale:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_03.png)
+![](.\imgs\vscode\vs_03.png)
 
 Veja que quem a criou foi a Microsoft, é esta que devemos instalar.
 
@@ -40,21 +40,21 @@ Por enquanto vamos focar na Remote - WSL.
 
 Se você clicar no ícone acima das extensões verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_04.png)
+![](.\imgs\vscode\vs_04.png)
 
 Veja que ele já nos mostra nossa distribuição do Ubuntu instalada e o meu nome de usuário do ubuntu! Clique com botão direito e "Open folder in WSL". A seguinte tela aparecerá para você:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_05.png)
+![](.\imgs\vscode\vs_05.png)
 
 Tá, mas eu quero desenvolver dentro da minha pasta **teste** que é aquela que criamos no GitHub e onde estou desenvolvendo meu código!
 
 Se você for em File > Open Folder..., você verá esta janela, digite então o caminho até a nossa pasta Teste e aperte OK
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_06.png)
+![](.\imgs\vscode\vs_06.png)
 
 Ok, veremos então:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_07.png" style="zoom:67%;" />
+<img src=".\imgs\vscode\vs_07.png" style="zoom:67%;" />
 
 Ah, bem melhor! Estamos dentro da nossa pasta **teste**!! 
 
@@ -62,47 +62,47 @@ Veja no canto inferior esquerdo temos WSL: Ubuntu 18-04 e logo depois **master**
 
 Se você clicar em **master** você verá:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_08.png)
+![](.\imgs\vscode\vs_08.png)
 
 viu, podemos criar uma branch nova por aqui. Vamos criar uma branch nova! Eu criei uma branch **adiciona_texto**. 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_09.png)
+![](.\imgs\vscode\vs_09.png)
 
 Viu? Já estamos na branch nova. Semelhante a fazer ``$ git checkout -b adiciona_texto``.
 
 Posso clicar com botão direito e criar um novo arquivo:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_10.png" style="zoom:67%;" />
+<img src=".\imgs\vscode\vs_10.png" style="zoom:67%;" />
 
 Veja o arquivo que eu criei e seu conteúdo:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_11.png)
+![](.\imgs\vscode\vs_11.png)
 
 Foi um código em python chamado **texto.py**! Veja que temos um menu do lado que apareceu um "1" num círculo azul. Se você clicar nele e clicar no texto.py, verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_12.png)
+![](.\imgs\vscode\vs_12.png)
 
 Incrível né? É exatamente o Git sendo mostrado pelo vscode! 
 
 Você pode fazer o comando ``$ git add`` ao clicar em:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_13.png)
+![](.\imgs\vscode\vs_13.png)
 
 E ``$ git commit -m "Adiciona texto.py"  ao digitar a mensagem:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_14.png" style="zoom:67%;" />
+<img src=".\imgs\vscode\vs_14.png" style="zoom:67%;" />
 
 Por mim o commit é terminado apertando Ctrl + Enter! Pronto, você fez um commit usando o vscode! Não acredita? 
 
 Se você voltar no terminal verá que o zsh já está te dizendo que você está na branch nova **adiciona_texto**, se você der um ``ls``ele vai te mostrar o **texto.py** nos arquivos. Um ``$ git log`` vai te mostrar exatamente seu último commit feito no vscode:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_15.png)
+![](.\imgs\vscode\vs_15.png)
 
 Então funcionou mesmo, certo?
 
 No meu do "source control" você tem acesso a outros commits que a gente viu anteriormente, como ``git push``e ``git pull``. Dá para fazer tudo pelo vscode!
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_16.png)
+![](.\imgs\vscode\vs_16.png)
 
 
 
@@ -114,11 +114,11 @@ Dica: existe um extensão do GitHub pro vscode que permite que você abra um PR 
 
 Queremos saber se o nosso arquivo **texto.py** realmente funciona. Vamos então ver como podemos rodá-lo pelo vscode! Se você abrir o arquivo e apertar F5, verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_17.png)
+![](.\imgs\vscode\vs_17.png)
 
 Não temos nenhuma opção de python aqui... Estranho né? Porque queremos rodar um código em python, não em node.js... Vá até as extensões e você verá o seguinte:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_18.png)
+![](.\imgs\vscode\vs_18.png)
 
 Pois bem, a gente tinha instalado a extensão Python localmente mas não no WSL! Instale no WSL. Após a instalação o sistema vai pedir que você faça um reload.
 
@@ -126,11 +126,11 @@ Quando você fizer o reload, provavelmente a primeira coisa que você verá ser�
 
 Agora com F5 nós temos a seguinte opção!
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_19.png)
+![](.\imgs\vscode\vs_19.png)
 
 Ótimo! Aperte Enter!
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_20.png)
+![](.\imgs\vscode\vs_20.png)
 
 Veja o que foi aberto, um terminal! Exatamente com o nosso zsh bonitinho e tudo mais! 
 
@@ -146,17 +146,17 @@ Tem um menu lá no topo chamado Terminal > New Terminal. Simples assim.
 
 Okay, agora eu fiz um código um pouco mais complexo, veja:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_21.png)
+![](.\imgs\vscode\vs_21.png)
 
 Esse código funciona? Ao apertar F5 e escolhermos a primeira opção, a gente vê que "8" é impresso na tela. Okay, funciona!
 
 Ta, mas eu tô com uma dúvida no funcionamento desse programa... que debugá-lo. Como faz? Você pode clicar do lado dos números das linhas e uma bolinha vermelho vai aparecer.
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_22.png)
+![](.\imgs\vscode\vs_22.png)
 
 Quando você apertar F5 + Enter novamente: 
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_23.png)
+![](.\imgs\vscode\vs_23.png)
 
 O código parou exatamente onde colocarmos o breakpoint. Veja no lado esquerdo o valor de **a**, a variável **b** ainda não tem valor, se você apertar Step Over (F10) (ou a setinha caindo do lado do play) você verá que **b** assume o valor 5, se clicar novamente chega o momento do print e o código acaba. Esse é o funcionamento básico do debugger!!
 
@@ -164,29 +164,29 @@ O código parou exatamente onde colocarmos o breakpoint. Veja no lado esquerdo o
 
 Nesse momento, se você for no controle de versão, você verá o seguinte:
 
-<img src="C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_24.png" style="zoom:67%;" />
+<img src=".\imgs\vscode\vs_24.png" style="zoom:67%;" />
 
 Tá, mas que arquivo é esse "settings.json", a gente não criou isso. Bem, ele é criado sozinho pelo vscode! Se você der uma olhada na nossa árvore de arquivos, você verá que ele está dentro de .vscode...
 
 Não tem uma maneira da gente ignorar esse arquivo e ele não ficar aparecendo toda hora no controle de versão??? Tem sim. É só adicionar o arquivo (ou a pasta) no **.gitignore**
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_25.png)
+![](.\imgs\vscode\vs_25.png)
 
 Abra o .gitignore e adicionar .vscode no topo do arquivo:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_26.png)
+![](.\imgs\vscode\vs_26.png)
 
 Da onde vem esse .gitignore?? Lembre-se que quando criamos o repositório teste no GitHub, nós escolhemos para iniciá-lo com um gitignore de python. Pois bem, o GitHub já cria o gitignore com os arquivos mais comuns a serem ignorados em um projeto de python! 
 
 Pronto, o que temos agora no controle de versão:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_27.png)
+![](.\imgs\vscode\vs_27.png)
 
 Apenas justamente o que mudamos! Ótimo.
 
 Agora veja se você consegue adicionar os arquivos, fazer um commit e dar um push pro github. No fim você deverá ver:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_28.png)
+![](.\imgs\vscode\vs_28.png)
 
 Sucesso!
 
@@ -194,7 +194,7 @@ Sucesso!
 
 Extra: você pode procurar por essential na extensões e instalar extensões que algum usuário juntou, como em:
 
-![](C:\Users\mesquita\Documents\Basico\imgs\vscode\vs_29.png)
+![](.\imgs\vscode\vs_29.png)
 
 Se você não gostar de alguma é só desativar!
 
