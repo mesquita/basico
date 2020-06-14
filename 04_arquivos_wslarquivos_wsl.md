@@ -18,13 +18,13 @@ Vou dar um exemplo de como você pode copiar um arquivo que está numa pasta sua
 
 Eu tenho um arquivo que eu acabei de baixar, o nome dele é **exemplo** e está em Downloads:
 
-![](.\imgs\wsl\wsl_02.png)
+<img src=".\imgs\wsl\wsl_02.png" style="zoom:67%;" />
 
 Como eu faço para mover este arquivo para /home/vinicius pelo terminal?
 
 Primeiros vamos até os Downloads do Windows, veja:
 
-![](.\imgs\wsl\wsl_03.png)
+<img src=".\imgs\wsl\wsl_03.png" style="zoom:67%;" />
 
 Já estou de olho no meu arquivo **exemplo.txt**. Agora eu vou copiar o arquivo usando:
 
@@ -34,11 +34,11 @@ Será que deu certo? Podemos conferir com
 
 ``$ ls /home/vinicius`` para ver se o arquivo está lá. Vejamos:
 
-![](.\imgs\wsl\wsl_04.png)
+<img src=".\imgs\wsl\wsl_04.png" style="zoom:67%;" />
 
 Realmente está lá em /home/vinicius. Agora podemos voltar para /home/vinicius com ``$ cd /home/vinicius`` e ver o que tem dentro de **exemplo.txt** usando o comando ``$ cat exemplo.txt`` .
 
-![](.\imgs\wsl\wsl_05.png)
+<img src=".\imgs\wsl\wsl_05.png" style="zoom:67%;" />
 
 Sucesso!
 
