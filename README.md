@@ -1,6 +1,6 @@
 # Básico
 
-Este é um roteiro para você dar os passos iniciais no caminho para aprender:
+Este é um pequeno tutorial para você dar os passos iniciais no caminho para aprender:
   - [a instalar o terminal do Ubuntu via WSL](./01_WSL.md)
   - [a instalar o Zsh e o Oh My Zsh (nossa ferramenta favorita pro terminal)](./02_zsh.md)
   - [a usar comandos essenciais do terminal do Ubuntu](03_terminal.md)
