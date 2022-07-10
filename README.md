@@ -1,3 +1,4 @@
+# Nota: Este repositório não é mais atualizado.
 # Básico
 
 Este é um pequeno tutorial para você dar os passos iniciais no caminho para aprender:
